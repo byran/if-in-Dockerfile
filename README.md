@@ -12,6 +12,12 @@ $ docker build -t hello-world .
 
 ```bash
 # Explicit specification of the build type
+$ docker build -t hello-world --build-arg BUILDTYPE=linux .
+```
+
+To build the windows image you can use
+
+```bash
 $ docker build -t hello-world --build-arg BUILDTYPE=windows .
 ```
 
