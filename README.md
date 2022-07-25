@@ -19,7 +19,7 @@ $ docker build -t hello-world --build-arg BUILDTYPE=windows .
 
 ## ```sh if``` method
 
-The ```Dockerfile-if``` allows switching using an ```sh``` if statement on the
+The ```sh-if/Dockerfile``` allows switching using an ```sh``` if statement on the
 ```BUILDTYPE``` docker build argument.
 
 This method does appear in the final image and will be messy if used on multiple
@@ -27,7 +27,7 @@ This method does appear in the final image and will be messy if used on multiple
 
 ## Switching ```from``` image method
 
-The ```Dockerfile-multiple-images``` allows switching of the final images base (```from```) image.
+The ```image-switch/Dockerfile``` allows switching of the final images base (```from```) image.
 
 This method does not appear in the final image and will be cleaner if you want
 to optionally run multiple Dockerfile instructions.
